@@ -42,7 +42,7 @@ The `getAttributes` method optionally accepts an array of attributes and will us
 
 Example
 ```js
-* store(request, response) {
+async store(request, response) {
   const data = request.jsonApi.getAttributes(['email', 'password', 'password-confirmation']);
 
   response.send(data);
@@ -55,7 +55,7 @@ This is the same as `getAttributes`, but will use `change-case` to change proper
 
 Example
 ```js
-* store(request, response) {
+async store(request, response) {
   const data = request.jsonApi.getAttributesCamelCase(['email', 'password', 'password-confirmation']);
 
   response.send(data);
@@ -68,7 +68,7 @@ This is the same as `getAttributes`, but will use `change-case` to change proper
 
 Example
 ```js
-* store(request, response) {
+async store(request, response) {
   const data = request.jsonApi.getAttributesSnakeCase(['email', 'password', 'password-confirmation']);
 
   response.send(data);
@@ -83,7 +83,7 @@ This method will dig into the request JSON and look for `data.id`.
 
 Example
 ```js
-* store(request, response) {
+async store(request, response) {
   const data = request.jsonApi.getId();
 
   response.send(data);
@@ -99,7 +99,7 @@ If the values do not match, then a `JsonApiError` with error code 400 and title 
 
 Example
 ```js
-* store(request, response) {
+async store(request, response) {
   request.jsonApi.assertId(reqest.params.id);
 
   response.send(data);
@@ -114,7 +114,7 @@ This function gets the `id` for a specified relation name. If the relation is an
 
 Example
 ```js
-* store(request, response) {
+async store(request, response) {
   const data = request.jsonApi.getAttributes(['email', 'password', 'password-confirmation']);
   data.user_id = request.jsonApi.getRelationId('author');
 
@@ -267,7 +267,7 @@ Http.handleError = function * (error, request, response) {
       });
   }
 
-  yield response.jsonApiError(error);
+  await response.jsonApiError(error);
 };
 ```
 
