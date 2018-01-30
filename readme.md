@@ -5,7 +5,7 @@
 
 This addon adds JSONApi Support and helpers for Adonis projects.
 
-> **NOTE** This addon is currently UNDER DEVELOPMENT so APIs, methods, and class structures may change (though I will try my best to keep docs up to date).
+> **NOTE** This addon is currently UNDER DEVELOPMENT. Shaun is currently working on setting up the namespace.
 
 ## Installation
 
