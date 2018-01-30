@@ -15,13 +15,13 @@ Run:
 npm install --save adonis4-jsonapi
 ```
 
-To the `providers` array in `bootstrap/app.js` add:
+To the `providers` array in `start/app.js` add:
 
 ```js
 'adonis4-jsonapi/providers/JsonApiProvider',
 ```
 
-To the `globalMiddleware` array in `app/Http/kernel.js` add:
+To the `globalMiddleware` array in `start/kernel.js` add:
 
 ```js
 'AdonisJsonApi/Middleware',
