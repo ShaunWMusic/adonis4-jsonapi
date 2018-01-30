@@ -11,13 +11,13 @@ To install this addon into you Adonis project follow these steps:
 Run:
 
 ```bash
-npm install --save adonis-jsonapi
+npm install --save adonis4-jsonapi
 ```
 
 To the `providers` array in `bootstrap/app.js` add:
 
 ```js
-'adonis-jsonapi/providers/JsonApiProvider',
+'adonis4-jsonapi/providers/JsonApiProvider',
 ```
 
 To the `globalMiddleware` array in `app/Http/kernel.js` add:
@@ -133,10 +133,10 @@ Serializing data takes two steps:
 
 To create a view, create a new module in `App/Http/JsonApiViews`.
 For instance to serialize a lucid model named `Author`, create a file `app/Http/JsonApiViews/Author.js`.
-From this new module, export a class that extends from `adonis-jsonapi/src/JsonApiView`:
+From this new module, export a class that extends from `adonis4-jsonapi/src/JsonApiView`:
 
 ```js
-const JsonApiView = require('adonis-jsonapi/src/JsonApiView');
+const JsonApiView = require('adonis4-jsonapi/src/JsonApiView');
 
 class Author extends JsonApiView {
 
@@ -151,7 +151,7 @@ Attributes are values that should be directly serialized as part of `data.attrib
 To describe the properties to be serialized, add a getter method called `attributes` that returns an array of dasherized property names:
 
 ```js
-const JsonApiView = require('adonis-jsonapi/src/JsonApiView');
+const JsonApiView = require('adonis4-jsonapi/src/JsonApiView');
 
 class Author extends JsonApiView {
   get attributes() {
@@ -169,7 +169,7 @@ But instead of putting the name of a model, you will put the name of the seriali
 Let's say our `Author` has many `Book`s:
 
 ```js
-const JsonApiView = require('adonis-jsonapi/src/JsonApiView');
+const JsonApiView = require('adonis4-jsonapi/src/JsonApiView');
 
 class Author extends JsonApiView {
   get attributes() {
@@ -201,7 +201,7 @@ This can be configured by creating a `primaryKey` getter that returns the proper
 
 
 ```js
-const JsonApiView = require('adonis-jsonapi/src/JsonApiView');
+const JsonApiView = require('adonis4-jsonapi/src/JsonApiView');
 
 class Post extends JsonApiView {
   get attributes() {
@@ -222,7 +222,7 @@ For relations primary keys can be customized using `ref`.
 For instance in our AuthorView, we can say that our related books use the `isbn` as a primary key:
 
 ```js
-const JsonApiView = require('adonis-jsonapi/src/JsonApiView');
+const JsonApiView = require('adonis4-jsonapi/src/JsonApiView');
 
 class Author extends JsonApiView {
   get attributes() {
