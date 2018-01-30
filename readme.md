@@ -1,11 +1,9 @@
 # Adonis JSON API
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Appveyor][appveyor-image]][appveyor-url]
+
 
 This addon adds JSONApi Support and helpers for Adonis projects.
 
-> **NOTE** This addon is currently UNDER DEVELOPMENT. Shaun is currently working on setting up the namespace.
+> **NOTE** This addon is currently UNDER DEVELOPMENT.
 
 ## Installation
 
