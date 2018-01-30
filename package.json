@@ -1,7 +1,7 @@
 {
-  "name": "adonis-jsonapi",
-  "version": "0.9.0",
-  "description": "A JSON API configuration for adonis-framework",
+  "name": "adonis-jsonapi 4.0",
+  "version": "0.0.1",
+  "description": "A JSON API configuration for adonis-framework 4.0",
   "main": "index.js",
   "scripts": {
     "test": "npm run lint && istanbul cover _mocha --report lcovonly -- -R spec test && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rtablada/adonis-jsonapi.git"
+    "url": "git+https://github.com/ShaunWmusic/adonis4-jsonapi.git"
   },
   "keywords": [
     "adonis",
@@ -18,12 +18,12 @@
     "middleware",
     "adonisjs"
   ],
-  "author": "Ryan Tablada",
+  "author": "Ryan Tablada & Shaun Willis",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rtablada/adonis-jsonapi/issues"
+    "url": "https://github.com/ShaunWmusic/adonis4-jsonapi.git#issues"
   },
-  "homepage": "https://github.com/rtablada/adonis-jsonapi#readme",
+  "homepage": "https://github.com/ShaunWmusic/adonis4-jsonapi#readme",
   "dependencies": {
     "change-case": "^3.0.0",
     "i": "^0.3.5",
@@ -34,7 +34,7 @@
     "node-exceptions": "^1.0.3"
   },
   "peerDependencies": {
-    "adonis-fold": "^3.0.2"
+    "@adonisjs/fold": "^4.0.5"
   },
   "devDependencies": {
     "eslint": "^3.2.0",

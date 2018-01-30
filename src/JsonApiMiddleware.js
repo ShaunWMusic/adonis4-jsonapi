@@ -54,10 +54,10 @@ class JsonApi {
     });
   }
 
-  * handle(request, response, next) {
+  async handle(request, response, next) {
     request.jsonApi = new JsonApiRequest(request);
 
-    yield next;
+    await next;
   }
 
 }
