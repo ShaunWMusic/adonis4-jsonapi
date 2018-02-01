@@ -1,6 +1,6 @@
 {
   "name": "adonis4-jsonapi",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A JSON API configuration for adonis-framework 4.0",
   "main": "index.js",
   "scripts": {
