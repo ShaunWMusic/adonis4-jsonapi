@@ -3,7 +3,16 @@
 
 This addon adds JSONApi Support and helpers for Adonis projects.
 
-> **NOTE** This addon is currently UNDER DEVELOPMENT.
+> **NOTE** Addon is NOT WORKING. It is currently showing hasFake of undefined property. If you
+know how to fix this issue, please create a pull request and we will update the code.
+Otherwise, I've figured out a way to set up an API without needing this addon. 
+Screencast Video Coming soon.
+
+
+
+
+
+
 
 ## Installation
 
